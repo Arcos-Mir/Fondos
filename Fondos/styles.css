@@ -1,0 +1,39 @@
+/* Valores que podemos utilizar ern las propiedades
+background: repeat |no-repeat| repeat-X | repeat-Y |;
+
+background-size: auto | 100px 100px | 100% 100% | cover | contain;
+
+explicacion de valores para background-size
+    auto: valor por defecto, el ancho y el alto de la imagen.
+    ancho y alto: ancho y alto que nosotros le especifiquemos, 
+    si solo ponemos el primer valor, el segundo sera automatico.
+    porcentaje: porcentaje del ancho y alto que tendra el fondo 
+    tomando en cuenta el contenedor padre.
+    cover: ajusta el ancho de la imagen  para que abarque el ancho 
+    del contenedor padre.
+    contain: ajusta la imagen parq eu abarque el ancho y el alto del 
+    contenedor padre.
+
+background-attachment: scroll | fixed;
+*/
+
+body {
+    /*background: black; coloca un color de fondo en la pagina web*/
+    background: url('img/bg.jpg');
+    /*background-repeat: no-repeat; se repite la imagen de fondo como tipo mosaico
+    background-repeat:repeat-x; solo de manera horizontal la repeticion de la imagen
+    background-repeat:repeat-y; solo vertical*/
+    background-repeat: no-repeat;
+    /*background-size: 500px; solo se ajusta un lado porque si no la imagen se deforma*/
+    background-size: 100%; /* el 50% 80 o 100% de la pagina*/
+    /*background-size: cover; solo ajusta el ancho de acuerdo al contenedor padre*/
+    /*background-size:contain;*/
+    background-attachment: scroll ;/*le añade un scrool lateral derecho a
+    la pagina para subir y bajar en la misma, pero tambien afecta a la imagen de fondo*/
+    /*background-attachment:fixed ;el scroll solo afecta al texto y deja la imagen fija en pantalla*/
+    /*background-position: center center;*/
+    background-position: 0px 40px;/*ajusta la imagen en X y Y*/
+
+    /*background: url('img/bg.jpg') no-repeat fixed center center; para evitar escribir mucho codigo*/
+
+}
